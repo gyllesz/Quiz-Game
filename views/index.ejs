@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles/main.css">  
+</head>
+<body>
+
+  <h1>Quiz Game</h1>
+
+  <!-- Start Screen -->
+  <div class="quiz-container" id="start-screen">
+    <h2>Welcome to the Quiz!</h2>
+    <p>Test your knowledge. Good luck!</p>
+    <button class="start-btn" id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div class="quiz-container hidden" id="quiz-screen">
+    <div class="question-number" id="question-number"></div>
+    <div class="question-text" id="question-text"></div>
+    <div class="choices-container" id="choices-container"></div>
+    <button class="next-btn" id="next-btn">Next Question</button>
+  </div>
+
+  <!-- Score Screen -->
+  <div class="quiz-container hidden" id="score-screen">
+    <div class="score-container">
+      <h2>Quiz Completed!</h2>
+      <p id="score-text"></p>
+      <button class="retake-btn" id="retake-btn">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

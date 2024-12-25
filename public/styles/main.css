@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+height: 100%; /* Helps ensure flex container has full height */
+}
+
+body {
+display: flex;
+flex-direction: column; /* So we can stack the heading above the container */
+align-items: center;    /* Horizontal center */
+justify-content: center;/* Vertical center */
+background: #0c0c0c;
+min-height: 100vh;      /* Take up the full viewport height */
+}
+
+h1 {
+text-align: center;
+color: #bd93f9;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
+
+.quiz-container {
+background: #1a1a1a;
+border-radius: 8px;
+padding: 20px;
+max-width: 600px;
+width: 100%;
+box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+border: 1px solid #272727;
+text-align: center; /* If you want text inside the container also centered */
+}
+
+
+/* Start / Score Screens */
+.quiz-container h2 {
+  margin-bottom: 15px;
+  color: #bd93f9; /* Purple accent for sub-headings */
+}
+
+/* Question content */
+.question-number {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Choices */
+.choices-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  background: #262626;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  color: #f2f2f2;
+}
+
+.choice:hover {
+  background: #333333;
+  border-color: #bd93f9; /* Purple hover border */
+}
+
+/* Correct/Incorrect color states */
+.choice.correct {
+  background: #6d4dec; /* Purple-ish color for correct */
+  border-color: #9776f2;
+}
+
+.choice.incorrect {
+  background: #c0392b; /* Red for incorrect */
+  border-color: #e74c3c;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start-btn {
+  background-color: #bd93f9;
+}
+
+.start-btn:hover {
+  background-color: #9f7ae5;
+}
+
+.next-btn {
+  background-color: #bd93f9;
+}
+
+.next-btn:hover {
+  background-color: #9f7ae5;
+}
+
+.retake-btn {
+  background-color: #6d4dec;
+}
+
+.retake-btn:hover {
+  background-color: #5834d9;
+}
+
+/* Score Container */
+.score-container h2 {
+  margin-bottom: 10px;
+}
+
+.score-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
