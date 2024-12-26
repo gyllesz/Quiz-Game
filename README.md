@@ -21,12 +21,12 @@ cd quiz-game
 ```
 2. Install dependencies:
 ```
-npm install
+npm i
 ```
 # Running the Application
 1. Start the server:
 ```
-node index.js
+nodemon index.js
 ```
 2. Open your browser and navigate to:
 ```
