@@ -1,6 +1,8 @@
 # Quiz Game
 This repository contains a simple quiz game that fetches questions from an external API and presents them to the user. The game is built using Node.js with Express.js, EJS for templating, and jQuery for frontend interactivity.
 
+You can try the website here: [Quiz Game](quiz-game-2frl.onrender.com)
+
 # About
 This is my **first-ever API project**, and while I didn’t fully commit to polishing it, I’m using this as a practice opportunity to learn and improve my skills. There are a lot of bugs and rough edges, but I’m proud of the progress I’ve made so far. Feel free to explore the project and share any feedback!
 
