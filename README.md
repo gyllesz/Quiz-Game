@@ -43,6 +43,7 @@ http://localhost:3000
 # Known Issues
 - You may need to wait a few seconds for the first question.
 - There may be bugs or unexpected behavior in certain scenarios.
+- Once you select an answer, it cannot be changed.
 - Some features are incomplete or require refinement.
 
 # Dependencies
